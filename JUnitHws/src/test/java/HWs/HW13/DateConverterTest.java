@@ -39,7 +39,7 @@ class DateConverterTest {
         assertEquals(outputResult, "26 Jan 2013");
     }
 
-    static Stream<Arguments> Input() {
+    static Stream<Arguments> input() {
         return Stream.of(
                 Arguments.arguments("26 January 2013", "dd MMMM yyyy"),
                 Arguments.arguments("26-01-2013", "dd-MM-yyyy"),
