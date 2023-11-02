@@ -33,7 +33,7 @@ class DateConverterTest {
     }
 
     @ParameterizedTest
-    @MethodSource("Input")
+    @MethodSource("input")
     void checkConvertFromAllFormats(String inputDate, String inputFormat) {
         String outputResult = DateConverter.convertDate(inputDate, inputFormat, "dd MMM yyyy");
         assertEquals(outputResult, "26 Jan 2013");
